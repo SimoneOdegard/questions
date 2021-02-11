@@ -95,14 +95,16 @@ function hannahFunc(){
 }
 hannahFunc();
 
-let numberOfGuesses = 4
-let correctAnswer = '24'
-console.log(24);
+
+function numberGame(){
+    let numberOfGuesses = 4
+    let correctAnswer = '24'
+    console.log(24);
 
 
 
 
-for(let i= 0; i < numberOfGuesses; i++){
+    for(let i= 0; i < numberOfGuesses; i++){
     let askNumber = prompt('pick a number between 1 - 100');
     while (askNumber < 1 || askNumber > 100){
         askNumber = prompt('Incorrect. Please select a number 1-100');
@@ -122,14 +124,17 @@ for(let i= 0; i < numberOfGuesses; i++){
     alert('Sorry ' + userName + ' The correct answer was 24!');
     
     }
+    }
 }
-
-let dogsList = ['german shepherd' , 'mastiff' , 'bulldog' , 'lab']
-
-console.log('dog list' , dogsList)
+numberGame();
 
 
-for(let i= 1; i < 6; i++){
+function dogGame(){
+    let dogsList = ['german shepherd' , 'mastiff' , 'bulldog' , 'lab']
+
+    console.log('dog list' , dogsList)
+
+    for(let i= 1; i < 6; i++){
     let dogQuestion = prompt('Guess my favorite dog');
     if(dogQuestion === dogsList[0] || dogQuestion === dogsList[1] || dogQuestion === dogsList[2] || dogQuestion === dogsList[3]){
         alert('Correct!');
@@ -139,7 +144,11 @@ for(let i= 1; i < 6; i++){
     }
 
 
+    }
 }
-    alert('Thanks for playing ' + userName + ' in total you got ' + correctCount + ' right!')
+dogGame();
+
+
+alert('Thanks for playing ' + userName + ' in total you got ' + correctCount + ' right!');
 
     
