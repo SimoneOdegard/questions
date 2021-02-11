@@ -1,73 +1,70 @@
 'use strict';
 
-let correctCount = 0
+let correctCount = 0;
 
-
+// First question ( Users Name)
 let userName = prompt('What is your name?');
-    alert('Hi ' + userName + ' welcome to my site!' );
-    alert('Try out this guessing game and see how well you know me!. See you around ' + userName + "!");
+alert('Hi ' + userName + ' welcome to my site!');
 
-
-let myName = prompt('Is My Name Elijah?');
-
-    if (myName.toLowerCase() === 'yes') {
-        alert('correct');
-        correctCount++
-        // console.log('correct')
-    }
-    else if (myName === 'no'){
-        alert('wrong')
-        // console.log('wrong')
-    }
-    else {
-        alert('please write yes or no')
-    }
-
-
-let myAge = prompt('Am I 25?');
-
-    if (myAge.toLowerCase() === 'yes') {
-        alert('correct');
-        correctCount++
-        // console.log('correct')
-    }
-    else if (myAge.toLowerCase() === 'no'){
-        alert('wrong')
-        // console.log('wrong')
-    }
-    else {
-        alert('please write yes or no')
-    }
+alert('Try out this guessing game and see how well you know me!. See you around ' + userName + "!");
 
 
 
-let dogs = prompt('Do i have 4 dogs?');
+// Second Question (My name question)
+let nameResponse = prompt('Is My Name Elijah?').toLowerCase();
 
-    if (dogs.toLowerCase() === 'yes') {
+if (nameResponse === 'yes' || nameResponse === 'y') {
+    alert('correct');
+    correctCount++
+    // console.log('correct')
+} else if (nameResponse === 'no' || nameResponse === 'n') {
+    alert('wrong');
+    // console.log('wrong')
+} else {
+    alert('please write yes or no');
+} 
+
+
+
+// Third question ( my age question )
+let myAgeResponse = prompt('Am I 25?').toLowerCase();
+
+if (myAgeResponse === 'yes' || myAgeResponse === 'y') {
+    alert('correct');
+    correctCount++
+    // console.log('correct')
+} else if (myAgeResponse === 'no' || myAgeResponse === 'n') {
+    alert('wrong');
+    // console.log('wrong')
+} else {
+    alert('please write yes or no')
+}
+
+
+
+let dogsResponse = prompt('Do i have 4 dogs?').toLowerCase();
+
+    if (dogsResponse === 'yes' || dogsResponse === 'y') {
         alert('wrong');
         // console.log('wrong')
-    }
-    else if (dogs.toLowerCase() === 'no'){
+    } else if (dogsResponse === 'no' || dogsResponse === 'n') {
         alert('correct');
         correctCount++
         // console.log('correct')
-    }
-    else {
+    } else {
         alert('please write yes or no');
     }
 
-let job = prompt('Was my previous job a hair stylist?');
+let jobResponse = prompt('Was my previous job a hair stylist?').toLowerCase();
 
-    if (job.toLowerCase() === 'yes') {
+    if (jobResponse === 'yes' || jobResponse === 'y') {
         alert('wrong');
         // console.log('wrong')
-    }
-    else if (job.toLowerCase() === 'no'){
+    } else if (jobResponse === 'no' || jobResponse === 'n'){
         alert('correct');
         correctCount++
         // console.log('correct')
-    }
-    else {
+    } else {
         alert('please write yes or no');
     }
 
@@ -77,12 +74,10 @@ let gf = prompt('Is my girlfriends name Hannah?');
         alert('correct!');
         correctCount++
         // console.log('correct')
-    }
-    else if (gf.toLowerCase() === 'no'){
+    } else if (gf.toLowerCase() === 'no'){
         alert('wrong')
         // console.log('wrong')
-    }
-    else {
+    } else {
         alert('please write yes or no');
     }
 
