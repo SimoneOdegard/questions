@@ -1,1 +1,7 @@
-About me Javascript Project
+# About me Javascript Project
+
+## Driver
+Simone
+
+## Navigator
+Elijah
